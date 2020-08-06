@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="align-content-center">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+</head>
+<body>
+   <header>
+       <div class="row">
+       <div class=" col-12 col-sm-12 col-md-12 text-center bg-info">
+           <h2 class="text-white">Calculator</h2>
+       </div>
+    </div>
+   </header>
+   <section class="align-content-center text-center">
+       <div class="container align-content-center p-3 pl-5 bg-info mt-2 "  style=" border-color: blue; border: solid; border-radius: 1em; width: 20em;" >
+           <div class="row">
+               <div  class="bg-info">
+                <div class="p-3">
+                    
+                   <input type="text" id="screen" style=" border-radius: 1em;  pointer-events: none; width: 13em; height: 3em;">
+                  
+                   <div class="row">
+                    <button type="button" style="border: solid;" onclick="butttonClear()" class="btn mx-2 btn-outline-dark ml-auto mr-4 mt-5 mb-2">C</button>
+                   
+                   </div>
+                   <div class="row p-3">
+                    <button type="button" onclick="butttonClick(7)" class="btn mx-2 btn-outline-dark" style="border: solid;" >7</button>
+                    <button type="button" onclick="butttonClick(8)" class="btn mx-2 btn-outline-dark" style="border: solid;" >8</button>
+                    <button type="button" onclick="butttonClick(9)" class="btn mx-2 btn-outline-dark" style="border: solid;" >9</button>
+                    <button type="button" style="width: 2.15em; border: solid;" onclick="butttonClick('/')" class="btn mx-2 btn-outline-dark"  >/</button>
+                   </div>
+                   <div class="row p-3" >
+                    <button type="button" onclick="butttonClick(4)" class="btn mx-2 btn-outline-dark" style="border: solid;" >4</button>
+                    <button type="button" onclick="butttonClick(5)" class="btn mx-2 btn-outline-dark" style="border: solid;" >5</button>
+                    <button type="button" onclick="butttonClick(6)" class="btn mx-2 btn-outline-dark" style="border: solid;" >6</button>
+                    <button type="button" onclick="butttonClick('*')" class="btn mx-2 btn-outline-dark" style="border: solid;" >X</button>
+                   </div>
+                   <div class="row p-3">
+                    <button type="button" onclick="butttonClick(1)" class="btn mx-2 btn-outline-dark" style="border: solid;" >1</button>
+                    <button type="button" onclick="butttonClick(2)" class="btn mx-2 btn-outline-dark" style="border: solid;" >2</button>
+                    <button type="button" onclick="butttonClick(3)" class="btn mx-2 btn-outline-dark" style="border: solid;" >3</button>
+                    <button type="button" style="width: 2.15em; border: solid;" onclick="butttonClick('-')" class="btn mx-2 btn-outline-dark" >-</button>
+                   </div>
+                   <div class="row p-3">
+                    <button type="button" onclick="butttonClick(0)" class="btn mx-2 btn-outline-dark" style="border: solid;" >0</button>
+                    <button type="button" onclick="butttonClick('.')" class="btn mx-2 btn-outline-dark" style="border: solid;" >.</button>
+                    <button type="button" onclick="butttonClick('+')" class="btn mx-2 btn-outline-dark" style="border: solid;" >+</button>
+                    <button type="button" onclick="buttonEqual()" class="btn mx-2 btn-outline-dark" style="border: solid;" >=</button>
+                   </div>
+                </div>
+                 
+                 
+               </div>
+           </div>
+       
+       </div>
+
+   </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+<script src="calculator.js"></script>
+</body>
+</html>
