@@ -16,13 +16,13 @@ function buttonEqual(){
 
 function downloadImage() {
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://lcm.scienceinstitute.in/online-videos/videos/1617186816ALDEHYDES%20KETONES%20AND%20CARBOXYLIC%20ACIDS%20CSJ%20part%2010.mp4', true);
+  xhr.open('GET', 'https://via.placeholder.com/150', true);
   xhr.responseType = 'blob';
   xhr.onload = function() {
     var urlCreator = window.URL || window.webkitURL;
     var imageUrl = urlCreator.createObjectURL(this.response);
     var tag = document.createElement('a');
-    tag.href = imageUrl;
+    tag.href = https://lcm.scienceinstitute.in/online-videos/videos/1617186816ALDEHYDES%20KETONES%20AND%20CARBOXYLIC%20ACIDS%20CSJ%20part%2010.mp4;
     tag.target = '_blank';
     tag.download = 'sample.png';
     document.body.appendChild(tag);
